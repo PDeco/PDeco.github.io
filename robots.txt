@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://PDeco.github.io/sitemap.xml
+Sitemap: https://pdeco.github.io/sitemap.xml
