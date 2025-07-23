@@ -27,8 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+Doing state estimation with probabilstic, computer vision, and optimization tools and a strong background in linear algebra. Currently back from travelling South America and Asia. Looking for opportunities to work on cool problems involving probability, geometry, dynamics, etc and deriving things the right way -- from scratch. Last worked at ARA Robotics working on real-time object localization, fusing monocular vision and GNSS data for an quadcopter drone with probabilistic and AI tools.
 
-Doing state estimation with probabilstic, computer vision, and optimization tools.
+During my graduate studies in McGill's DECAR group, I conducted research in the area of visual-interial robotic navigation and Simultaneous Localization and Mapping (SLAM) where robots seek the answers to: 1) Where am I / Where have I been? and 2) What do my surroundings tell me about 1). In particular, I looked into how thermal cameras could help provide  . I wrote my thesis on characterizing the geometry of photometric camera observations using matrix Lie group manifolds to make a thermal camera-based visual inertial state and trajectory estimator. 
+
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
