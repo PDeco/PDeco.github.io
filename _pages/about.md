@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Make linear algebra cool again. State estimation with probabilstic methods, computer vision, and optimization.
 
 profile:
   align: right
