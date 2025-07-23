@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Make linear algebra cool again. State estimation with probabilstic methods, computer vision, and optimization.
+subtitle: Make linear algebra cool again (if it ever wasn't).
 
 profile:
   align: right
@@ -26,6 +26,9 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+
+Doing state estimation with probabilstic, computer vision, and optimization tools.
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
