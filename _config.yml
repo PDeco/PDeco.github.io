@@ -176,6 +176,10 @@ exclude:
   - _projects/*
   - _posts/*
   - _pages/profiles*
+  - _pages/projects.md
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _pages/blog.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
