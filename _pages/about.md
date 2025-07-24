@@ -30,7 +30,7 @@ Welcome to my page!
 
 I am an MSc. graduate from the [DECAR group](https://www.decar.ca/home) at McGill University, Montreal, Canada. I have a background in aerospace, applied mathematics and computer science, with a strong focus on linear algebra, probability, optimization, and computer vision. I am passionate about understanding things thoroughly -- deriving solutions from first principles and applying them to real-world problems.
 
-I have experience working on various state estimation problems. My thesis focused on thermal-intertial based navigation in challenging environments with the use of matrix Lie group theory to model the geometry of photometric camera observations. Most lately at ARA Robotics, I have worked on real-time object localization for quadcopter drones, fusing monocular vision and GNSS data using probabilistic and AI tools.
+I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thesis focused on thermal-inertial based navigation in challenging environments, focusing on using matrix Lie group theory to model the geometry of photometric camera observations. Meanwhile, and most lately at ARA Robotics, I have also worked on real-time object localization for quadcopter drones, fusing monocular vision and GNSS data using probabilistic and AI tools.
 
 I am currently looking for opportunities to work on new problems involving probability, geometry, dynamics, etc. and deriving things the right way -- from scratch.
 
