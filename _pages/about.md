@@ -26,10 +26,17 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+Welcome to my page!
 
-Doing state estimation with probabilstic, computer vision, and optimization tools and a strong background in linear algebra. Currently back from travelling South America and Asia. Looking for opportunities to work on cool problems involving probability, geometry, dynamics, etc and deriving things the right way -- from scratch. Last worked at ARA Robotics working on real-time object localization, fusing monocular vision and GNSS data for an quadcopter drone with probabilistic and AI tools.
+I am an MSc. graduate from the [DECAR group](https://www.decar.ca/home) at McGill University, Montreal, Canada. I have a background in aerospace, applied mathematics and computer science, with a strong focus on linear algebra, probability, optimization, and computer vision. I am passionate about understanding things thoroughly -- deriving solutions from first principles and applying them to real-world problems.
 
-During my graduate studies in [McGill's DECAR group](https://www.decar.ca/home), I conducted research in the area of visual-interial robotic navigation and Simultaneous Localization and Mapping (SLAM). In particular, I looked into navigating in challenging environment with the use of thermal cameras. I wrote my thesis on characterizing the geometry of photometric camera observations using matrix Lie group manifolds to make a thermal camera-based visual inertial state and trajectory estimator. 
+I have experience working on various state estimation problems. My thesis focused on thermal-intertial based navigation in challenging environments with the use of matrix Lie group theory to model the geometry of photometric camera observations. Most lately at ARA Robotics, I have worked on real-time object localization for quadcopter drones, fusing monocular vision and GNSS data using probabilistic and AI tools.
+
+I am currently looking for opportunities to work on new problems involving probability, geometry, dynamics, etc. and deriving things the right way -- from scratch.
+
+<!-- Doing state estimation with the help of probabilstic, computer vision, and optimization tools. Strong background in linear algebra Currently back from travelling South America and Asia and looking for opportunities to work on new problems involving probability, geometry, dynamics, etc. and deriving things the right way -- from scratch. Last worked at ARA Robotics working on real-time object localization, fusing monocular vision and GNSS data for an quadcopter drone with probabilistic and AI tools.
+
+During my graduate studies in McGill University's [DECAR group](https://www.decar.ca/home), I conducted research in the area of visual-interial robotic navigation and Simultaneous Localization and Mapping (SLAM). In particular, I looked into navigating in challenging environment with the use of thermal cameras. I wrote my thesis on characterizing the geometry of photometric camera observations using matrix Lie group manifolds to make a thermal camera-based visual inertial state and trajectory estimator.  -->
 
 
 
