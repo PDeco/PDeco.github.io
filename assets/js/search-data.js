@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Some of the things I have worked on!",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-repositories",
           title: "repositories",
           description: "Some of the things I have contributed to!",
@@ -50,6 +57,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "projects-thermal-navigation",
+          title: 'Thermal Navigation',
+          description: "Visuals from the front end.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/thermal_homog/";
             },},{
         id: 'social-email',
         title: 'email',
