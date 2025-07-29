@@ -11,7 +11,7 @@ In visual-inertial navigation, we use an inertial sensor to quickly predict the 
 
 The question is for my thesis thus became: can a camera be used to correct the assumption-constrained predicted state of a system and can it be done with a thermal camera to reduce reliance on GNSS and good lighting conditions (e.g. night time, or indoors)?
 
-The answer is yes, and the results are shown in the video below. 
+The answer is yes, and the results are shown in the videos below. 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
