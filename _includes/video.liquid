@@ -52,44 +52,26 @@
       {% endif %}
     />
 
-  {% else %}
-    <iframe
-      src="{{ include.path }}"
-      {% if include.class %}
-        class="{{ include.class }}"
-      {% endif %}
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-      {% if include.width %}
-        width="{{ include.width }}"
-      {% else %}
-        width="auto"
-      {% endif %}
-      {% if include.height %}
-        height="{{ include.height }}"
-      {% else %}
-        height="auto"
-      {% endif %}
-      {% if include['min-width'] %}
-        min-width="{{ include.min-width }}"
-      {% endif %}
-      {% if include['min-height'] %}
-        min-height="{{ include.min-height }}"
-      {% endif %}
-      {% if include['max-width'] %}
-        max-width="{{ include.max-width }}"
-      {% endif %}
-      {% if include['max-height'] %}
-        height="{{ include.max-height }}"
-      {% endif %}
-      {% if include.alt %}
-        alt="{{ include.alt }}"
-      {% endif %}
-      {% if include.title %}
-        title="{{ include.title }}"
-      {% endif %}
-    />
+ {% else %}
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe
+        src="{{ include.path }}{% if include.path contains '?' %}&{% else %}?{% endif %}modestbranding=1&rel=0{% if include.controls == false %}&controls=0{% endif %}{% if include.autoplay == true %}&autoplay=1{% endif %}"
+        {% if include.class %}
+          class="{{ include.class }} embed-responsive-item"
+        {% else %}
+          class="embed-responsive-item"
+        {% endif %}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        {% if include.alt %}
+          alt="{{ include.alt }}"
+        {% endif %}
+        {% if include.title %}
+          title="{{ include.title }}"
+        {% endif %}
+      ></iframe>
+    </div>
   {% endif %}
   {% if include.caption %}
     <figcaption class="caption">{{ include.caption }}</figcaption>
