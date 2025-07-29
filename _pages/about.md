@@ -36,9 +36,9 @@ I am currently looking for opportunities to work on new problems involving proba
 
 Welcome to my website!
 
-I help robots find out where they are so they can know where to go next. I have a background in space systems design, but now focus mostly on state estimation problems. My strengths lie in probabilstic modeling, computer vision, optimization, and linear algebra (especially matrix Lie groups!). Feel free to take a look around! 
+I help robots find out where they are so they can know where to go next. I have a background in space systems design, but now focus mostly on state estimation problems. My strengths lie in probabilstic modeling, computer vision, optimization, and linear algebra (especially matrix Lie groups!). Feel free to take a look around!
 
-I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thesis, which I did in McGill's [DECAR group](https://www.decar.ca/home), focused on thermal-inertial based navigation in challenging environments, focusing on using matrix Lie group theory to model the geometry of photometric camera observations. Meanwhile, and most lately at ARA Robotics, I have also worked on real-time object localization for quadcopter drones, fusing monocular vision and GNSS data using probabilistic and AI tools.
+I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thesis, which I did in McGill's [DECAR group](https://www.decar.ca/home), focused on thermal-inertial based navigation in challenging environments with emphasis on leveraging matrix Lie group theory to model the geometry of photometric camera observations. Meanwhile, and most lately at ARA Robotics, I have also worked on real-time object localization for quadcopter drones, fusing monocular vision and GNSS data using probabilistic and AI tools.
 
 <!-- Doing state estimation with the help of probabilstic, computer vision, and optimization tools. Strong background in linear algebra Currently back from travelling South America and Asia and looking for opportunities to work on new problems involving probability, geometry, dynamics, etc. and deriving things the right way -- from scratch. Last worked at ARA Robotics working on real-time object localization, fusing monocular vision and GNSS data for an quadcopter drone with probabilistic and AI tools. -->
 
