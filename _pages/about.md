@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Make linear algebra cool again (if it ever wasn't).
+subtitle: I help robots find out where they are so they can know where to go next.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: #>
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
+  more_info: 
+    <p><a href="mailto:philippe.decoste@mail.mcgill.ca">philippe.decoste@mail.mcgill.ca</a></p>
+
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -34,17 +33,15 @@ I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thes
 
 I am currently looking for opportunities to work on new problems involving probability, geometry, dynamics, etc. and deriving things the right way -- from scratch. -->
 
+<!-- Doing state estimation with the help of probabilstic, computer vision, and optimization tools. Strong background in linear algebra Currently back from travelling South America and Asia and looking for opportunities to work on new problems involving probability, geometry, dynamics, etc. and deriving things the right way -- from scratch. Last worked at ARA Robotics working on real-time object localization, fusing monocular vision and GNSS data for an quadcopter drone with probabilistic and AI tools.
+
+During my graduate studies in McGill University's [DECAR group](https://www.decar.ca/home), I conducted research in the area of visual-interial robotic navigation and Simultaneous Localization and Mapping (SLAM). In particular, I looked into navigating in challenging environment with the use of thermal cameras. I wrote my thesis on characterizing the geometry of photometric camera observations using matrix Lie group manifolds to make a thermal camera-based visual inertial state and trajectory estimator.  -->
+
 Welcome to my website!
 
-I help robots find out where they are so they can know where to go next. I have a background in space systems design, but now focus mostly on state estimation problems. My strengths lie in probabilstic modeling, computer vision, optimization, and linear algebra (especially matrix Lie groups!). Feel free to take a look around!
+ I am an M.Sc. graduate from the [DECAR group](https://www.decar.ca/home) at McGill University, Montreal, Canada.  I have a background in space systems design, but now focus mostly on state estimation problems. My strengths lie in probabilstic modeling, computer vision, optimization, and linear algebra (especially matrix Lie groups!). Feel free to take a look around!
 
-I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thesis, which I did in McGill's [DECAR group](https://www.decar.ca/home), focused on thermal-inertial based navigation in challenging environments with emphasis on leveraging matrix Lie group theory to model the geometry of photometric camera observations. Meanwhile, and most lately at ARA Robotics, I have also worked on real-time object localization for quadcopter drones, fusing monocular vision and GNSS data using probabilistic and AI tools.
-
-<!-- Doing state estimation with the help of probabilstic, computer vision, and optimization tools. Strong background in linear algebra Currently back from travelling South America and Asia and looking for opportunities to work on new problems involving probability, geometry, dynamics, etc. and deriving things the right way -- from scratch. Last worked at ARA Robotics working on real-time object localization, fusing monocular vision and GNSS data for an quadcopter drone with probabilistic and AI tools. -->
-
-<!-- During my graduate studies in McGill University's [DECAR group](https://www.decar.ca/home), I conducted research in the area of visual-interial robotic navigation and Simultaneous Localization and Mapping (SLAM). In particular, I looked into navigating in challenging environment with the use of thermal cameras. I wrote my thesis on characterizing the geometry of photometric camera observations using matrix Lie group manifolds to make a thermal camera-based visual-inertial state and trajectory estimator.  -->
-
-
+I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thesis focused on thermal-inertial based navigation in challenging environments with emphasis on leveraging matrix Lie group theory to model the geometry of photometric camera observations. Meanwhile, and most lately at ARA Robotics, I have also worked on real-time object localization for quadcopter drones, fusing monocular vision and GNSS data using probabilistic and AI tools.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
