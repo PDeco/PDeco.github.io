@@ -41,7 +41,7 @@ Welcome to my website!
 
 I am an M.Sc. graduate from the [DECAR group](https://www.decar.ca/home) at McGill University in Montreal, Canada, with a background in space systems design. My focus is now primarily on state estimation problems, and my strengths lie in probabilistic modeling, computer vision, optimization, and linear algebra (especially matrix Lie groups!). Feel free to take a look around!
 
-I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thesis focused on **thermal-inertial based navigation** in challenging environments with emphasis on leveraging **matrix Lie group theory** to model the geometry of photometric camera observations. Meanwhile, and most lately at ARA Robotics, I have also worked on real-time object localization for quadcopter drones, **fusing monocular vision and GNSS data** using probabilistic and AI tools.
+I have worked on both GNSS-denied and GNSS-augmented navigation systems. My thesis focused on **thermal-inertial based navigation** in challenging environments with emphasis on leveraging **matrix Lie group theory** to model the geometric relations of photometric camera observations. Meanwhile, and most lately at ARA Robotics, I have also worked on real-time object localization for quadcopter drones, **fusing monocular vision and GNSS data** using probabilistic and AI tools.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
