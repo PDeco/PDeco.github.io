@@ -9,7 +9,7 @@ related_publications: false
 ---
 In visual-inertial navigation, we use an inertial sensor to quickly predict the state of the system, and a camera to correct it periodically. Typically, the inertial measurements come from both an accelerometer and a gyroscope, but it is possible to reduce the reliance down to simply the gyroscope -- given that the trajectory adheres to certain profiles. 
 
-The question is for my thesis thus became: can a camera be used to correct the assumption-constrained predicted state of a system and can it be done with a thermal camera to reduce reliance on GNSS and good lighting conditions (e.g. night time, or indoors)?
+The question is for my thesis thus became: can a porbabilistic estimator (in this case an Iterated Extended Kalman Filter) be used to correct the assumption-constrained predicted state of a system and can it be done with a thermal camera to reduce reliance on GNSS and good lighting conditions (e.g. night time, or indoors)?
 
 The answer is yes, and the results are shown in the videos below. 
 
