@@ -4,7 +4,7 @@ title: Thermal Navigation
 description: Visuals from the front end.
 img: assets/img/Combination_raw_h264.gif
 importance: 1
-category: work
+category: "Guidance, Navigation, and Control"
 related_publications: false
 ---
 In visual-inertial navigation, we use an inertial sensor to quickly predict the state of the system, and a camera to correct it periodically. Typically, the inertial measurements come from both an accelerometer and a gyroscope, but it is possible to reduce the reliance down to simply the gyroscope -- given that the trajectory adheres to certain profiles. 
