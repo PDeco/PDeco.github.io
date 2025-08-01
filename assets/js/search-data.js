@@ -69,6 +69,11 @@ ninja.data = [{
           description: "Visuals from the front end.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/thermal_homog/";
+            },},{id: "projects-towards-topographical-slam",
+          title: 'Towards Topographical SLAM',
+          description: "1st place winner of the 2021 Informs OR/MS Mini Poster Competition. (Photo by iStock)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/topog_slam/";
             },},{
         id: 'social-email',
         title: 'email',
@@ -81,7 +86,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/Philippe Decoste", "_blank");
+          window.open("https://www.linkedin.com/in/philippe-decoste-40bb5a265", "_blank");
         },
       },{
       id: 'light-theme',
