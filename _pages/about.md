@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: I help robots find out where they are so they can know where to go next.
+subtitle: M.Sc. Mechanical Engineering | Determining where robots probably are not.
 
 profile:
   align: right
