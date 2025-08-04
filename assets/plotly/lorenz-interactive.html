@@ -42,6 +42,7 @@
 <div id="plot"></div>
 
 <script>
+let currentCamera = null;
 let sigma = 10, rho = 28, beta = 2.667, dt = 0.01;
 let x = 1, y = 1, z = 1;
 let trailLength = 1000;
@@ -78,6 +79,14 @@ Plotly.newPlot('plot', [
     zaxis: { title: 'Z' }
   },
   margin: { l: 0, r: 0, b: 0, t: 0 }
+});
+
+const plotDiv = document.getElementById('plot');
+
+plotDiv.on('plotly_relayout', (eventData) => {
+  if (eventData['scene.camera']) {
+    currentCamera = eventData['scene.camera'];
+  }
 });
 
 function getColorFromParams(sigma, rho, beta) {
@@ -128,12 +137,22 @@ function animate() {
     return rgbaFromRGB(c, alpha);
   });
 
-Plotly.update('plot', {
-  x: [xTrail, [x]],
-  y: [yTrail, [y]],
-  z: [zTrail, [z]],
-  'line.color': [rgbaTrail, null]
-}, {}, [0, 1]);
+  const layout = {
+  scene: {
+    xaxis: { title: 'X' },
+    yaxis: { title: 'Y' },
+    zaxis: { title: 'Z' },
+    camera: currentCamera || {}  // ← preserve user view!
+  },
+  margin: { l: 0, r: 0, b: 0, t: 0 }
+};
+
+    Plotly.update('plot', {
+    x: [xTrail, [x]],
+    y: [yTrail, [y]],
+    z: [zTrail, [z]],
+    'line.color': [rgbaTrail, null]
+    }, layout, [0, 1]);
 }
 
 setInterval(animate, 1); // ~50 FPS
