@@ -7,4 +7,7 @@ importance: 3
 category: fun
 related_publications: false
 ---
-{% include lorenz_plot.html %}
+
+<iframe src="/assets/plotly/lorenz-interactive.html" width="100%" height="600px" style="border:none;"></iframe>
+
+
