@@ -17,8 +17,6 @@
     #plot {
     width: 100vw;
     height: 100vh;
-
-    /* Important: allow plot to receive pointer events */
     pointer-events: auto;
     }
 </style>
@@ -37,6 +35,15 @@
 
   <label for="trail">Trail</label>
   <input id="trail" type="range" min="10" max="2000" step="10" value="1000">
+
+    <label for="cam-x">Cam X</label>
+  <input id="cam-x" type="range" min="-3" max="3" step="0.01" value="1.5">
+
+  <label for="cam-y">Cam Y</label>
+  <input id="cam-y" type="range" min="-3" max="3" step="0.01" value="1.5">
+
+  <label for="cam-z">Cam Z</label>
+  <input id="cam-z" type="range" min="-3" max="3" step="0.01" value="1.5">
 </div>
 
 <div id="plot"></div>
@@ -54,6 +61,18 @@ function updateParameters() {
   rho = parseFloat(document.getElementById('rho').value);
   beta = parseFloat(document.getElementById('beta').value);
   trailLength = parseInt(document.getElementById('trail').value);
+}
+
+// Function to update the camera using slider values
+function updateCamera() {
+  const camX = parseFloat(document.getElementById('cam-x').value);
+  const camY = parseFloat(document.getElementById('cam-y').value);
+  const camZ = parseFloat(document.getElementById('cam-z').value);
+
+  const newCamera = {
+    eye: { x: camX, y: camY, z: camZ }
+  };
+  Plotly.relayout('plot', { 'scene.camera': newCamera });
 }
 
 // Initial plot
@@ -74,21 +93,20 @@ Plotly.newPlot('plot', [
   }
 ], {
   scene: {
-    xaxis: { title: 'X', range: [-50, 50] },
-    yaxis: { title: 'Y', range: [-50, 50] },
-    zaxis: { title: 'Z', range: [-20, 70] },
-    camera: {}
+    xaxis: { title: 'X', range: [-30, 30] },
+    yaxis: { title: 'Y', range: [-30, 30] },
+    zaxis: { title: 'Z', range: [0, 50] },
+    camera: {
+      eye: { x: 1.5, y: 1.5, z: 1.5 }
+    }
   },
   margin: { l: 0, r: 0, b: 0, t: 0 }
 });
 
-const plotDiv = document.getElementById('plot');
-
-plotDiv.on('plotly_relayout', (eventData) => {
-  if (eventData['scene.camera']) {
-    currentCamera = eventData['scene.camera'];
-  }
-});
+// Add event listeners for the new camera sliders
+document.getElementById('cam-x').addEventListener('input', updateCamera);
+document.getElementById('cam-y').addEventListener('input', updateCamera);
+document.getElementById('cam-z').addEventListener('input', updateCamera);
 
 function getColorFromParams(sigma, rho, beta) {
   let r = Math.min(sigma / 30, 1);
@@ -143,7 +161,6 @@ function animate() {
     return rgbaFromRGB(c, alpha);
   });
 
-  // Only update the data. The fixed ranges prevent autoscaling.
   Plotly.restyle('plot', {
     x: [xTrail, [x]],
     y: [yTrail, [y]],
