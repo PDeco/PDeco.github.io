@@ -74,9 +74,10 @@ Plotly.newPlot('plot', [
   }
 ], {
   scene: {
-    xaxis: { title: 'X' },
-    yaxis: { title: 'Y' },
-    zaxis: { title: 'Z' }
+    xaxis: { title: 'X', range: [-50, 50] },
+    yaxis: { title: 'Y', range: [-50, 50] },
+    zaxis: { title: 'Z', range: [-20, 70] },
+    camera: {}
   },
   margin: { l: 0, r: 0, b: 0, t: 0 }
 });
@@ -115,13 +116,19 @@ function stepLorenz() {
 
   const color = getColorFromParams(sigma, rho, beta);
   pointColors.push(color);
+
+  if (xs.length > trailLength + 500) {
+    xs = xs.slice(-trailLength - 500);
+    ys = ys.slice(-trailLength - 500);
+    zs = zs.slice(-trailLength - 500);
+    pointColors = pointColors.slice(-trailLength - 500);
+  }
 }
 
 function animate() {
   updateParameters();
   stepLorenz();
 
-  // Get only the last N points
   const len = xs.length;
   const trail = parseInt(document.getElementById('trail').value);
   const start = Math.max(0, len - trail);
@@ -131,31 +138,21 @@ function animate() {
   const zTrail = zs.slice(start);
   const colorTrail = pointColors.slice(start);
 
-  // Apply fading alpha from oldest to newest
   const rgbaTrail = colorTrail.map((c, i) => {
     const alpha = (i + 1) / colorTrail.length;
     return rgbaFromRGB(c, alpha);
   });
 
-  const layout = {
-  scene: {
-    xaxis: { title: 'X' },
-    yaxis: { title: 'Y' },
-    zaxis: { title: 'Z' },
-    camera: currentCamera || {}  // ← preserve user view!
-  },
-  margin: { l: 0, r: 0, b: 0, t: 0 }
-};
-
-    Plotly.update('plot', {
+  // Only update the data. The fixed ranges prevent autoscaling.
+  Plotly.restyle('plot', {
     x: [xTrail, [x]],
     y: [yTrail, [y]],
     z: [zTrail, [z]],
     'line.color': [rgbaTrail, null]
-    }, layout, [0, 1]);
+  });
 }
 
-setInterval(animate, 1); // ~50 FPS
+setInterval(animate, 30);
 </script>
 
 </body>
