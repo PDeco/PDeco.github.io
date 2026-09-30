@@ -1,9 +1,11 @@
 # github_users:
 
-
-repo_description_lines_max: 2
-
+# Each repo is either "owner/name" or a map with repo, description and language.
+# Cards are rendered locally; no external stats service.
 github_repos:
-  - decargroup/navlie
-  - decargroup/pylie
-
+  - repo: decargroup/navlie
+    description: A state estimation package for Lie groups!
+    language: Python
+  - repo: decargroup/pymlg
+    description: Pure static Lie groups in Numpy, Pytorch, Jax, and C++
+    language: Python
